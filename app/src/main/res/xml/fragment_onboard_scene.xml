@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/onboard1image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/onboard2image"
+            app:layout_constraintStart_toEndOf="parent" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/onboard3image"
+            app:layout_constraintStart_toEndOf="parent" />
+        <Constraint
+            android:id="@+id/circle1"
+            app:layout_constraintEnd_toStartOf="@+id/circle2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/circle2"
+            app:layout_constraintTop_toTopOf="@+id/circle2">
+            <CustomAttribute
+                app:attributeName="crossfade"
+                app:customFloatValue="1" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/circle2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+            <CustomAttribute
+                app:attributeName="crossfade"
+                app:customFloatValue="0" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/circle3"
+            app:layout_constraintStart_toEndOf="@+id/circle2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/circle2"
+            app:layout_constraintTop_toTopOf="@+id/circle2">
+            <CustomAttribute
+                app:attributeName="crossfade"
+                app:customFloatValue="0" />
+        </Constraint>
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/middle">
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/onboard1image"
+            app:layout_constraintEnd_toStartOf="parent" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/onboard2image"
+            app:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/onboard3image"
+            app:layout_constraintStart_toEndOf="parent" />
+        <Constraint
+            android:id="@+id/circle2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+            <CustomAttribute
+                app:attributeName="crossfade"
+                app:customFloatValue="1" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/circle3"
+            app:layout_constraintStart_toEndOf="@+id/circle2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/circle2"
+            app:layout_constraintTop_toTopOf="@+id/circle2">
+            <CustomAttribute
+                app:attributeName="crossfade"
+                app:customFloatValue="0" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/circle1"
+            app:layout_constraintEnd_toStartOf="@+id/circle2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/circle2"
+            app:layout_constraintTop_toTopOf="@+id/circle2">
+            <CustomAttribute
+                app:attributeName="crossfade"
+                app:customFloatValue="0" />
+        </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/onboard1image"
+            app:layout_constraintEnd_toStartOf="parent" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/onboard2image"
+            app:layout_constraintEnd_toStartOf="parent" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/onboard3image"
+            app:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/circle1"
+            app:layout_constraintEnd_toStartOf="@+id/circle2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/circle2"
+            app:layout_constraintTop_toTopOf="@+id/circle2">
+            <CustomAttribute
+                app:attributeName="crossfade"
+                app:customFloatValue="0" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/circle2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+            <CustomAttribute
+                app:attributeName="crossfade"
+                app:customFloatValue="0" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/circle3"
+            app:layout_constraintStart_toEndOf="@+id/circle2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/circle2"
+            app:layout_constraintTop_toTopOf="@+id/circle2">
+            <CustomAttribute
+                app:attributeName="crossfade"
+                app:customFloatValue="1" />
+        </Constraint>
+        <Constraint
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="@id/btn_joinnow"
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_next"/>
+    </ConstraintSet>
+
+    <Transition
+        app:constraintSetEnd="@id/middle"
+        app:constraintSetStart="@+id/start" >
+        <OnSwipe app:dragDirection="dragLeft" />
+        <OnClick app:targetId="@id/tv_next"
+            app:clickAction="transitionToEnd" />
+    </Transition>
+    <Transition
+        app:constraintSetEnd="@id/end"
+        app:constraintSetStart="@+id/middle" >
+        <OnSwipe app:dragDirection="dragLeft" />
+        <OnClick app:targetId="@id/tv_next"
+            app:clickAction="transitionToEnd" />
+    </Transition>
+</MotionScene>

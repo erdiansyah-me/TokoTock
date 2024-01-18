@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.auth.OnboardFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layoutDescription="@xml/fragment_onboard_scene">
+    <ImageView
+        android:id="@+id/onboard1image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/onboard1_preview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/onboard_image" />
+    <ImageView
+        android:id="@+id/onboard2image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/onboard2_preview"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/onboard_image" />
+
+    <ImageView
+        android:id="@+id/onboard3image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/onboard_image"
+        android:src="@drawable/onboard3_preview"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_joinnow"
+        android:layout_width="match_parent"
+        android:text="@string/join_now"
+        android:fontFamily="@font/poppins"
+        android:layout_marginBottom="64dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/circle2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:altSrc="@drawable/ic_circle_onboarding"
+        android:src="@drawable/ic_circle_onboarding_off"
+        />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/circle3"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_circle_onboarding_off"
+        app:altSrc="@drawable/ic_circle_onboarding"
+        app:layout_constraintBottom_toBottomOf="@+id/circle2"
+        app:layout_constraintStart_toEndOf="@+id/circle2"
+        app:layout_constraintTop_toTopOf="@+id/circle2" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/circle1"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_circle_onboarding_off"
+        app:altSrc="@drawable/ic_circle_onboarding"
+        app:layout_constraintBottom_toBottomOf="@+id/circle2"
+        app:layout_constraintEnd_toStartOf="@+id/circle2"
+        app:layout_constraintTop_toTopOf="@+id/circle2" />
+
+    <TextView
+        android:id="@+id/tv_skip"
+        android:padding="2dp"
+        android:fontFamily="@font/poppins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/btn_joinnow"
+        android:text="@string/skip"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/poppins"
+        android:padding="2dp"
+        android:text="@string/selanjutnya"
+        app:layout_constraintTop_toBottomOf="@id/btn_joinnow"
+        android:layout_marginTop="12dp"
+        app:layout_constraintRight_toRightOf="@id/btn_joinnow"/>
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

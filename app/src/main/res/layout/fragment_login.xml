@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.auth.LoginFragment">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:elevation="2dp"
+        android:gravity="center"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_marginVertical="8dp"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:fontFamily="@font/poppins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email_layout"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true"
+        android:hint="@string/email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/action_bar"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:helperTextEnabled="true"
+        app:helperText="Contoh: test@gmail.com"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_layout"
+        android:hint="@string/password"
+        android:layout_marginTop="24dp"
+        app:errorEnabled="true"
+        app:helperTextEnabled="true"
+        app:helperText="Minimal 8 Karakter"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="24dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email_layout"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:passwordToggleEnabled="true"
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:text="@string/login"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password_layout" />
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/materialDivider"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:dividerThickness="2dp"
+        android:layout_marginStart="12dp"
+        app:dividerColor="@color/grey"
+
+        app:layout_constraintTop_toTopOf="@id/tv_orregister"
+        app:layout_constraintBottom_toBottomOf="@id/tv_orregister"
+        app:layout_constraintLeft_toRightOf="@id/tv_orregister"
+        />
+
+    <TextView
+        android:id="@+id/tv_orregister"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:layout_height="wrap_content"
+        android:text="@string/orregister"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="@id/btn_login"
+        app:layout_constraintTop_toBottomOf="@id/btn_login"
+        app:layout_constraintRight_toRightOf="@id/btn_login"
+        />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/materialDivider2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        app:dividerThickness="2dp"
+        app:dividerColor="@color/grey"
+        app:layout_constraintTop_toTopOf="@id/tv_orregister"
+        app:layout_constraintBottom_toBottomOf="@id/tv_orregister"
+        app:layout_constraintRight_toLeftOf="@id/tv_orregister"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_register"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="24dp"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        app:layout_constraintTop_toBottomOf="@+id/tv_orregister"
+        app:strokeColor="@color/purple" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/btn_register"
+        android:text="@string/tnc_auth"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

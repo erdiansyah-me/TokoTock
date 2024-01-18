@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- ... other style attributes ... -->
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">?attr/colorSecondaryContainer</item>
+    </style>
+    <style name="ToolbarTitleCustom">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+    <style name="StoreItemTextStyleSmall">
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+</resources>

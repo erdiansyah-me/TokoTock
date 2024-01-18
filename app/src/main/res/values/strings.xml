@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">TokoTock</string>
+    <string name="join_now">Gabung Sekarang</string>
+    <string name="skip">Lewati</string>
+    <string name="selanjutnya">Selanjutnya</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Masuk</string>
+    <string name="register">Daftar</string>
+    <string name="orregister">atau daftar dengan</string>
+    <string name="orlogin">atau masuk dengan</string>
+    <string name="tnc_auth">Dengan masuk disini, kamu menyetujui Syarat &amp; Ketentuan serta Kebijakan Privasi TokoPhincon.</string>
+    <string name="profil">Profil</string>
+    <string name="finish">Selesai</string>
+    <string name="onboard_image">onboard image</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="nama">Nama</string>
+    <string name="transaction">Transaction</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="store">Store</string>
+    <string name="home">Home</string>
+</resources>
