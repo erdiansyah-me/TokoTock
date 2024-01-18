@@ -1,8 +1,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("dagger.hilt.android.plugin")
-    id("com.google.devtools.ksp") version "1.9.10-1.0.13"
+    id("com.google.devtools.ksp")
+    //id("kotlin-kapt")
 }
 
 android {
@@ -57,11 +57,14 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("com.squareup.okhttp3:logging-interceptor:4.9.3")
 
-    //hilt
-    implementation ("com.google.dagger:hilt-android:2.42")
-    ksp("com.google.dagger:hilt-compiler:2.42")
-    ksp("com.google.dagger:hilt-android-compiler:2.42")
-    implementation ("androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03")
+    //Multidex
+    implementation("androidx.multidex:multidex:2.0.1")
+
+    // Koin for Android
+    implementation("io.insert-koin:koin-core:3.5.3")
+    implementation ("io.insert-koin:koin-android:3.5.3")
+    implementation ("io.insert-koin:koin-annotations:1.3.0")
+    ksp("io.insert-koin:koin-ksp-compiler:1.3.0")
 
     //Room
     implementation("androidx.room:room-runtime:2.6.1")
