@@ -8,9 +8,11 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.greildev.tokotock.R
 import com.greildev.tokotock.databinding.FragmentOnboardBinding
+import com.greildev.tokotock.ui.viewmodel.UserViewModel
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class OnboardFragment : Fragment() {
-
+    private val userViewModel : UserViewModel by viewModel()
     private var _binding: FragmentOnboardBinding? = null
     private val binding get() = _binding!!
 
@@ -25,9 +27,9 @@ class OnboardFragment : Fragment() {
         }
 
         binding.tvSkip.setOnClickListener{
+            userViewModel.setUserOnboardingPreferences(isShowOnboarding = false)
             findNavController().navigate(R.id.action_onboardFragment_to_loginFragment)
         }
-
         return binding.root
     }
 }
