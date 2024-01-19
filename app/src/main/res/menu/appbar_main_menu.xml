@@ -5,16 +5,16 @@
         android:id="@+id/notification_actionbar"
         android:icon="@drawable/ic_circle_onboarding_off"
         app:showAsAction="always"
-        android:title="notification" />
+        android:title="@string/notification" />
     <item
         android:id="@+id/cart_actionbar"
-        android:icon="@drawable/ic_circle_onboarding_off"
+        android:icon="@drawable/ic_cart"
         app:showAsAction="always"
-        android:title="Cart" />
+        android:title="@string/cart" />
     <item
         android:id="@+id/menu_actionbar"
         android:icon="@drawable/ic_circle_onboarding_off"
         app:showAsAction="ifRoom"
-        android:title="menu" />
+        android:title="@string/menu" />
 
 </menu>

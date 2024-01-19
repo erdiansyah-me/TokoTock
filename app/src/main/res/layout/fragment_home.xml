@@ -3,15 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center"
     tools:context=".ui.homepage.HomeFragment"
     android:orientation="vertical">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/dashboard_anim"
+        android:layout_width="wrap_content"
+        android:layout_height="182dp"
+        app:lottie_rawRes="@raw/dashboard_animation"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_repeatMode="reverse"
+        android:layout_marginBottom="66dp"
+        />
 
     <Button
         android:id="@+id/btn_logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Logout"
+        android:text="@string/logout"
         android:fontFamily="@font/poppins"
         />
     <LinearLayout
@@ -23,7 +35,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins"
             android:layout_marginHorizontal="24dp"
-            android:text="EN"/>
+            android:text="@string/en"/>
         <com.google.android.material.switchmaterial.SwitchMaterial
             android:id="@+id/sw_languange"
             style="@style/Widget.Material3.CompoundButton.MaterialSwitch"
@@ -34,7 +46,7 @@
             android:fontFamily="@font/poppins"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
-            android:text="ID"/>
+            android:text="@string/id"/>
     </LinearLayout>
 
     <LinearLayout
@@ -46,7 +58,7 @@
             android:fontFamily="@font/poppins"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
-            android:text="Light"/>
+            android:text="@string/light"/>
         <com.google.android.material.switchmaterial.SwitchMaterial
             android:id="@+id/sw_theme"
             style="@style/Widget.Material3.CompoundButton.MaterialSwitch"
@@ -57,7 +69,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
-            android:text="Dark"/>
+            android:text="@string/dark"/>
     </LinearLayout>
 
 
