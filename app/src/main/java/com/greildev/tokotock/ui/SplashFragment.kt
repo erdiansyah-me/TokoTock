@@ -33,8 +33,8 @@ class SplashFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val splashYellow = ObjectAnimator.ofFloat(binding.splashYellow, View.ROTATION,  -20f).setDuration(1000)
-        val splashRed = ObjectAnimator.ofFloat(binding.splashRed, View.ROTATION,  15f).setDuration(1000)
+        val splashYellow = ObjectAnimator.ofFloat(binding.splashYellow, View.ROTATION,  -25f).setDuration(1000)
+        val splashRed = ObjectAnimator.ofFloat(binding.splashRed, View.ROTATION,  18f).setDuration(1000)
         val splashGreen = ObjectAnimator.ofFloat(binding.splashGreen, View.TRANSLATION_Y, -100f).setDuration(1000)
 
         AnimatorSet().apply {

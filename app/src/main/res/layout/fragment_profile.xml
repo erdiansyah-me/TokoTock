@@ -22,6 +22,10 @@
             android:layout_height="wrap_content"
             android:text="@string/profil"
             />
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            />
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.cardview.widget.CardView
