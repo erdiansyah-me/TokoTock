@@ -29,4 +29,5 @@
     <string name="light">Light</string>
     <string name="dark">Dark</string>
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, sapien quis aliquam ultricies, nisl lacinia nisl, vitae aliquam nisl vitae nisl.</string>
+    <string name="pp_user">pp_user</string>
 </resources>
