@@ -55,12 +55,13 @@
             <LinearLayout
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
+                android:gravity="center_vertical"
                 android:orientation="horizontal"
                 >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="wasd"
+                <ImageView
+                    android:layout_height="12dp"
+                    android:layout_width="12dp"
+                    android:src="@drawable/ic_account_user"
                     />
                 <TextView
                     android:layout_width="wrap_content"
@@ -74,12 +75,13 @@
             <LinearLayout
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
+                android:gravity="center_vertical"
                 android:orientation="horizontal"
                 >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="wasd"
+                <ImageView
+                    android:layout_height="12dp"
+                    android:layout_width="12dp"
+                    android:src="@drawable/ic_star"
                     />
                 <TextView
                     android:layout_width="wrap_content"

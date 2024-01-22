@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/notification_actionbar"
-        android:icon="@drawable/ic_circle_onboarding_off"
+        android:icon="@drawable/ic_notification"
         app:showAsAction="always"
         android:title="@string/notification" />
     <item
@@ -13,7 +13,7 @@
         android:title="@string/cart" />
     <item
         android:id="@+id/menu_actionbar"
-        android:icon="@drawable/ic_circle_onboarding_off"
+        android:icon="@drawable/ic_menu"
         app:showAsAction="ifRoom"
         android:title="@string/menu" />
 

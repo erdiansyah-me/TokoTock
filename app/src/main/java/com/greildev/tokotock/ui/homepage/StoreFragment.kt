@@ -11,10 +11,12 @@ import com.greildev.tokotock.databinding.FragmentStoreBinding
 class StoreFragment : Fragment() {
     private var _binding: FragmentStoreBinding? = null
     private val binding get() = _binding!!
+
+    private var onBottomSheetButtonClicked: BottomSheetOnClickFilterListener? = null
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentStoreBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -31,5 +33,16 @@ class StoreFragment : Fragment() {
 
             }
         )
+        binding.btnChipFilter.setOnClickListener {
+            onBottomSheetButtonClicked?.onFilterClick()
+        }
     }
+
+    fun setOnBottomSheetClickListener(onClickFilterListener: BottomSheetOnClickFilterListener) {
+        this.onBottomSheetButtonClicked = onClickFilterListener
+    }
+}
+
+interface BottomSheetOnClickFilterListener {
+    fun onFilterClick()
 }
