@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
 import com.greildev.tokotock.databinding.FragmentHomeBinding
@@ -38,8 +39,11 @@ class HomeFragment : Fragment() {
                 binding.swTheme.isChecked = false
             }
         }
-        binding.swTheme.setOnCheckedChangeListener { _, ButtonCheeeeeck ->
-            userViewModel.setUserThemePreferences(ButtonCheeeeeck)
+        binding.btnLogout.setOnClickListener {
+            Toast.makeText(activity, "Click!", Toast.LENGTH_SHORT).show()
+        }
+        binding.swTheme.setOnCheckedChangeListener { _, buttonCheeeeeck ->
+            userViewModel.setUserThemePreferences(buttonCheeeeeck)
         }
     }
 
