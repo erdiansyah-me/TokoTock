@@ -19,16 +19,13 @@
             android:id="@+id/toolbar_main"
             app:logo="@drawable/ic_account_user"
             app:titleMarginStart="32dp"
-
             android:layout_width="match_parent"
-            app:menu="@menu/appbar_main_menu"
             app:titleTextAppearance="@style/ToolbarTitleCustom"
             app:title="Name"
             />
         <com.google.android.material.divider.MaterialDivider
             android:layout_width="match_parent"
             android:layout_height="4dp"
-
             />
 
     </com.google.android.material.appbar.AppBarLayout>
